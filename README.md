@@ -24,7 +24,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 
-Solution URL: [https://seismicman.github.io/04-Results-Summary-Component/](https://seismicman.github.io/04-Results-Summary-Component/)
+Solution URL: [https://seismicman.github.io/06-Order-Summary-Component/](https://seismicman.github.io/06-Order-Summary-Component/)
 
 ## My process
 
