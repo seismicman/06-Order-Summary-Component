@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url("../src/assets/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--Pale-blue);
+  font-family: "Red Hat Display";
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 1rem;
+  width: 280px;
+  background-color: var(--Very-pale-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.illustration img {
+  border-radius: 1rem 1rem 0rem 0;
+  width: 100%;
+  margin-bottom: 1.3rem;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem 1rem 2rem;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: var(--Dark-blue);
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--Desaturated-blue);
+  font-size: 0.7rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.subscription {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.icon-music {
+  margin-left: 2.5rem;
+  width: 2rem;
+}
+
+.duration-plan {
+  margin-left: 0.5rem;
+  font-size: 0.65rem;
+}
+
+.price {
+  margin-left: 0.5rem;
+  font-size: 0.65rem;
+  color: var(--Desaturated-blue);
+}
+
+.change-link {
+  margin-left: 4.6rem;
+  font-size: 0.5rem;
+  color: var(--Bright-blue);
+}
+
+.change-link:hover {
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0.65;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment {
+  width: 80%;
+  padding: 0.65rem 0rem;
+  margin-bottom: 1.25rem;
+  border-radius: 0.5rem;
+  background-color: var(--Bright-blue);
+  color: var(--Pale-blue);
+  font-size: 0.65rem;
+  border: 0;
+}
+
+.payment:hover {
+  cursor: pointer;
+  opacity: 0.65;
+}
+
+.cancel {
+  width: 80%;
+  margin-bottom: 1.5rem;
+  border: 0;
+  background-color: var(--Very-pale-blue);
+  color: var(--Dark-blue);
+  font-size: 0.65rem;
+  opacity: 0.65;
+}
+
+.cancel:hover {
+  color: var(--Dark-blue);
+  cursor: pointer;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    background-image: url("../src/assets/images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: scroll;
+  }
+
+  .card {
+    width: 80vw;
+  }
+
+  .payment,
+  .cancel {
+    padding: 1rem 0rem;
+    font-size: 0.75rem;
+  }
+
+  .subscription {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .subscription > * {
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .subscription {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .icon-music,
+  .change-link {
+    margin-left: 0;
+  }
+}
