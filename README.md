@@ -18,9 +18,9 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Screenshot
 
-![](./public/assets/images/screenshot1.jpg)
+![](./src/assets/images/screenshot1.jpg)
 
-![](./public/assets/images/screenshot2.jpg)
+![](./src/assets/images/screenshot2.jpg)
 
 ### Links
 
